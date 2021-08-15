@@ -1,0 +1,4 @@
+Required Programs:
+Visual Studio 2019
+.NET desktop Development (in Visual Studio Workloads)
+AccessDatabaseEngine_X64.exe

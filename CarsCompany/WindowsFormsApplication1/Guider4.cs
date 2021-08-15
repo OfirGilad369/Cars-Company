@@ -1,0 +1,52 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Windows.Forms;
+
+namespace WindowsFormsApplication1
+{
+    public partial class Guider4 : Form
+    {
+        public Guider4()
+        {
+            InitializeComponent();
+            WindowState = FormWindowState.Maximized;
+        }
+
+        private void Guider4_Load(object sender, EventArgs e)
+        {
+            toolStripLabel2.Text += x;
+
+            DAL DL1 = new DAL("CarCompany.accdb");
+
+            DataTable y1 = new DataTable();
+
+            y1 = DL1.getDataTable("select * from Workers where WorkID='" + x + "'", y1);
+
+            toolStripLabel1.Text += y1.Rows[0][1].ToString();
+        }
+
+        private string x;
+
+        public void GetID(string x1)
+        {
+            this.x = x1;
+        }
+
+        private void toolStripButton1_Click(object sender, EventArgs e)
+        {
+            ToFix TF = new ToFix();
+            TF.ShowDialog();
+        }
+
+        private void toolStripButton2_Click(object sender, EventArgs e)
+        {
+            Customers TF = new Customers();
+            TF.ShowDialog();
+        }
+    }
+}

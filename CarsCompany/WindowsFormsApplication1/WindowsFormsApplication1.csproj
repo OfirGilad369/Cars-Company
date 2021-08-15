@@ -1,0 +1,448 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9E2BFCFD-CAFD-43E2-B659-BB3808859659}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WindowsFormsApplication1</RootNamespace>
+    <AssemblyName>WindowsFormsApplication1</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="itextsharp">
+      <HintPath>..\..\..\Computer Projects\References\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp.pdfa">
+      <HintPath>..\..\..\Computer Projects\References\itextsharp.pdfa.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp.xtra">
+      <HintPath>..\..\..\Computer Projects\References\itextsharp.xtra.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DAL.cs" />
+    <Compile Include="Fixes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fixes.Designer.cs">
+      <DependentUpon>Fixes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Accessories Orders.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Accessories Orders.Designer.cs">
+      <DependentUpon>Accessories Orders.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Customers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customers.Designer.cs">
+      <DependentUpon>Customers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Accessories.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Accessories.Designer.cs">
+      <DependentUpon>Accessories.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Back.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Back.Designer.cs">
+      <DependentUpon>Back.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Final Payments.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Final Payments.Designer.cs">
+      <DependentUpon>Final Payments.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fire Worker.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fire Worker.Designer.cs">
+      <DependentUpon>Fire Worker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fix Payments.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fix Payments.Designer.cs">
+      <DependentUpon>Fix Payments.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomersSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomersSearch.Designer.cs">
+      <DependentUpon>CustomersSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Final Supply.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Final Supply.Designer.cs">
+      <DependentUpon>Final Supply.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FixesSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FixesSearch.Designer.cs">
+      <DependentUpon>FixesSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CreditPaymentSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreditPaymentSearch.Designer.cs">
+      <DependentUpon>CreditPaymentSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CheckPaymentSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CheckPaymentSearch.Designer.cs">
+      <DependentUpon>CheckPaymentSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CashPaymentSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CashPaymentSearch.Designer.cs">
+      <DependentUpon>CashPaymentSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FixesPaymentSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FixesPaymentSearch.Designer.cs">
+      <DependentUpon>FixesPaymentSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OrderInfoSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OrderInfoSearch.Designer.cs">
+      <DependentUpon>OrderInfoSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OrdersSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OrdersSearch.Designer.cs">
+      <DependentUpon>OrdersSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManufacturersSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManufacturersSearch.Designer.cs">
+      <DependentUpon>ManufacturersSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkPassword.Designer.cs">
+      <DependentUpon>WorkPassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Guider1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Guider1.Designer.cs">
+      <DependentUpon>Guider1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Guider4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Guider4.Designer.cs">
+      <DependentUpon>Guider4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Guider3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Guider3.Designer.cs">
+      <DependentUpon>Guider3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Guider2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Guider2.Designer.cs">
+      <DependentUpon>Guider2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkersSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkersSearch.Designer.cs">
+      <DependentUpon>WorkersSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModelsSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModelsSearch.Designer.cs">
+      <DependentUpon>ModelsSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ShowOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShowOrder.Designer.cs">
+      <DependentUpon>ShowOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Search Order.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Search Order.Designer.cs">
+      <DependentUpon>Search Order.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TimeListII.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TimeListII.Designer.cs">
+      <DependentUpon>TimeListII.cs</DependentUpon>
+    </Compile>
+    <Compile Include="To Fix.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="To Fix.Designer.cs">
+      <DependentUpon>To Fix.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TimeListI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TimeListI.Designer.cs">
+      <DependentUpon>TimeListI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Payments.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Payments.Designer.cs">
+      <DependentUpon>Payments.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Supply.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply.Designer.cs">
+      <DependentUpon>Supply.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mikdama.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mikdama.Designer.cs">
+      <DependentUpon>Mikdama.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TypesOfFaults.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TypesOfFaults.Designer.cs">
+      <DependentUpon>TypesOfFaults.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Workers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Workers.Designer.cs">
+      <DependentUpon>Workers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Open.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Open.Designer.cs">
+      <DependentUpon>Open.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Models.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Models.Designer.cs">
+      <DependentUpon>Models.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Guider.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Guider.Designer.cs">
+      <DependentUpon>Guider.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Orders.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Orders.Designer.cs">
+      <DependentUpon>Orders.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manufacturers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manufacturers.Designer.cs">
+      <DependentUpon>Manufacturers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Accessories Orders.resx">
+      <DependentUpon>Accessories Orders.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Accessories.resx">
+      <DependentUpon>Accessories.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customers.resx">
+      <DependentUpon>Customers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomersSearch.resx">
+      <DependentUpon>CustomersSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Final Payments.resx">
+      <DependentUpon>Final Payments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Final Supply.resx">
+      <DependentUpon>Final Supply.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fire Worker.resx">
+      <DependentUpon>Fire Worker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fix Payments.resx">
+      <DependentUpon>Fix Payments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fixes.resx">
+      <DependentUpon>Fixes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Back.resx">
+      <DependentUpon>Back.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FixesSearch.resx">
+      <DependentUpon>FixesSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreditPaymentSearch.resx">
+      <DependentUpon>CreditPaymentSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CheckPaymentSearch.resx">
+      <DependentUpon>CheckPaymentSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CashPaymentSearch.resx">
+      <DependentUpon>CashPaymentSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FixesPaymentSearch.resx">
+      <DependentUpon>FixesPaymentSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrderInfoSearch.resx">
+      <DependentUpon>OrderInfoSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrdersSearch.resx">
+      <DependentUpon>OrdersSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManufacturersSearch.resx">
+      <DependentUpon>ManufacturersSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkPassword.resx">
+      <DependentUpon>WorkPassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Guider1.resx">
+      <DependentUpon>Guider1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Guider2.resx">
+      <DependentUpon>Guider2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Guider3.resx">
+      <DependentUpon>Guider3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Guider4.resx">
+      <DependentUpon>Guider4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mikdama.resx">
+      <DependentUpon>Mikdama.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModelsSearch.resx">
+      <DependentUpon>ModelsSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Payments.resx">
+      <DependentUpon>Payments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Search Order.resx">
+      <DependentUpon>Search Order.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShowOrder.resx">
+      <DependentUpon>ShowOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply.resx">
+      <DependentUpon>Supply.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TimeListI.resx">
+      <DependentUpon>TimeListI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TimeListII.resx">
+      <DependentUpon>TimeListII.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="To Fix.resx">
+      <DependentUpon>To Fix.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkersSearch.resx">
+      <DependentUpon>WorkersSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Models.resx">
+      <DependentUpon>Models.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Guider.resx">
+      <DependentUpon>Guider.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manufacturers.resx">
+      <DependentUpon>Manufacturers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Open.resx">
+      <DependentUpon>Open.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Orders.resx">
+      <DependentUpon>Orders.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="TypesOfFaults.resx">
+      <DependentUpon>TypesOfFaults.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Workers.resx">
+      <DependentUpon>Workers.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
